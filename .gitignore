@@ -8,3 +8,6 @@ ROTEIRO_E_CHECKLIST.md
 
 # Dados (baixados automaticamente por src/coleta.py)
 data/
+
+# Planilha gerada por src/exportar_excel.py
+*.xlsx

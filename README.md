@@ -16,6 +16,12 @@ python -m venv .venv
 
 O pipeline baixa os dados sozinho e leva cerca de 2 minutos.
 
+Para ter os dados tratados e os resultados em uma planilha Excel, depois de rodar o pipeline:
+
+```powershell
+.\.venv\Scripts\python src\exportar_excel.py
+```
+
 ## Estrutura
 
 | Arquivo | Etapa | O que faz |
@@ -24,6 +30,7 @@ O pipeline baixa os dados sozinho e leva cerca de 2 minutos.
 | `src/tratamento.py` | **Transform + Load** | Limpa, junta 7 tabelas, cria variáveis (atraso, frete/valor…) e grava Parquet → `reports/governanca.json` |
 | `src/mineracao.py` | **Mineração** | Random Forest, K-Means (RFM) e mineração de texto → `reports/resultados.json` e `reports/figuras/*.png` |
 | `run_pipeline.py` | Orquestração | Roda as 3 etapas em sequência |
+| `src/exportar_excel.py` | Exportação | Gera `dados_pesquisa_olist.xlsx` com resumo (fórmulas), faixas de atraso, pedidos, clientes RFM, governança e dicionário de dados |
 
 ## Principais resultados
 
