@@ -1,0 +1,119 @@
+{
+  "volume": {
+    "arquivos": 9,
+    "total_mb": 119.4,
+    "total_linhas": 1550922,
+    "por_arquivo": [
+      {
+        "arquivo": "olist_customers_dataset.csv",
+        "tamanho_mb": 8.17,
+        "linhas": 99441,
+        "colunas": 5,
+        "tipos": [
+          "int64",
+          "str"
+        ]
+      },
+      {
+        "arquivo": "olist_geolocation_dataset.csv",
+        "tamanho_mb": 58.44,
+        "linhas": 1000163,
+        "colunas": 5,
+        "tipos": [
+          "float64",
+          "int64",
+          "str"
+        ]
+      },
+      {
+        "arquivo": "olist_order_items_dataset.csv",
+        "tamanho_mb": 14.31,
+        "linhas": 112650,
+        "colunas": 7,
+        "tipos": [
+          "float64",
+          "int64",
+          "str"
+        ]
+      },
+      {
+        "arquivo": "olist_order_payments_dataset.csv",
+        "tamanho_mb": 5.39,
+        "linhas": 103886,
+        "colunas": 5,
+        "tipos": [
+          "float64",
+          "int64",
+          "str"
+        ]
+      },
+      {
+        "arquivo": "olist_order_reviews_dataset.csv",
+        "tamanho_mb": 13.78,
+        "linhas": 99224,
+        "colunas": 7,
+        "tipos": [
+          "int64",
+          "str"
+        ]
+      },
+      {
+        "arquivo": "olist_orders_dataset.csv",
+        "tamanho_mb": 16.84,
+        "linhas": 99441,
+        "colunas": 8,
+        "tipos": [
+          "str"
+        ]
+      },
+      {
+        "arquivo": "olist_products_dataset.csv",
+        "tamanho_mb": 2.27,
+        "linhas": 32951,
+        "colunas": 9,
+        "tipos": [
+          "float64",
+          "str"
+        ]
+      },
+      {
+        "arquivo": "olist_sellers_dataset.csv",
+        "tamanho_mb": 0.16,
+        "linhas": 3095,
+        "colunas": 4,
+        "tipos": [
+          "int64",
+          "str"
+        ]
+      },
+      {
+        "arquivo": "product_category_name_translation.csv",
+        "tamanho_mb": 0.0,
+        "linhas": 71,
+        "colunas": 2,
+        "tipos": [
+          "str"
+        ]
+      }
+    ]
+  },
+  "variedade": {
+    "formatos": [
+      "CSV estruturado",
+      "texto livre (comentarios)",
+      "datas/horarios",
+      "geolocalizacao (lat/lng)",
+      "categoricos",
+      "numericos (preco, frete, peso)"
+    ],
+    "tabelas_relacionais": 9
+  },
+  "velocidade": {
+    "periodo_inicio": "2016-09-04",
+    "periodo_fim": "2018-10-17",
+    "dias": 772,
+    "pedidos_por_dia_medio": 128.8,
+    "pico_pedidos_mes": 7544,
+    "mes_pico": "2017-11"
+  }
+}

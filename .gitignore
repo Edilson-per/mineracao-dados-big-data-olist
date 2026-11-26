@@ -1,0 +1,10 @@
+# Ambiente virtual
+.venv/
+__pycache__/
+*.pyc
+
+# Material interno da apresentação
+ROTEIRO_E_CHECKLIST.md
+
+# Dados (baixados automaticamente por src/coleta.py)
+data/

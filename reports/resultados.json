@@ -1,0 +1,170 @@
+{
+  "descritiva": {
+    "pedidos_analisados": 95783,
+    "nota_media": 4.16,
+    "insatisfeitos_pct": 12.8,
+    "atrasados_pct": 8.0,
+    "dias_entrega_mediana": 10.2,
+    "prazo_prometido_mediana": 23.2,
+    "entrega_antes_do_prazo_media_dias": 11.3,
+    "insatisfeitos_no_prazo_pct": 9.2,
+    "insatisfeitos_atrasados_pct": 54.1,
+    "nota_media_no_prazo": 4.29,
+    "nota_media_atrasados": 2.56
+  },
+  "pedidos_por_mes": {
+    "2017-01": 741,
+    "2017-02": 1641,
+    "2017-03": 2516,
+    "2017-04": 2284,
+    "2017-05": 3514,
+    "2017-06": 3109,
+    "2017-07": 3842,
+    "2017-08": 4165,
+    "2017-09": 4117,
+    "2017-10": 4446,
+    "2017-11": 7232,
+    "2017-12": 5459,
+    "2018-01": 7010,
+    "2018-02": 6503,
+    "2018-03": 6948,
+    "2018-04": 6752,
+    "2018-05": 6721,
+    "2018-06": 6071,
+    "2018-07": 6118,
+    "2018-08": 6330
+  },
+  "insatisfacao_por_faixa_atraso": {
+    "10+ dias adiantado": 9.0,
+    "3-10 adiantado": 9.4,
+    "0-3 adiantado": 11.2,
+    "1-3 atrasado": 19.1,
+    "4-7 atrasado": 61.3,
+    "8-14 atrasado": 78.1,
+    "15+ dias atrasado": 79.8
+  },
+  "curiosidade_vendedores": {
+    "1 vendedor": 12.3,
+    "2+ vendedores": 47.3,
+    "pedidos_multivendedor": 1261,
+    "atrasados_multivendedor_pct": 1.3,
+    "atrasados_1_vendedor_pct": 8.0,
+    "comentarios_neg_multivendedor": 506,
+    "citam_entrega_parcial_pct": 66.4
+  },
+  "estados": {
+    "maior_atraso": "AL",
+    "maior_atraso_pct": 23.4,
+    "menor_atraso": "PR",
+    "menor_atraso_pct": 4.9,
+    "corr_atraso_insatisfacao": 0.92
+  },
+  "classificacao": {
+    "modelo": "Random Forest (300 árvores, class_weight=balanced)",
+    "treino": 71837,
+    "teste": 23946,
+    "auc_modelo": 0.757,
+    "auc_baseline_aleatorio": 0.5,
+    "recall_insatisfeitos": 0.544,
+    "precisao_insatisfeitos": 0.39,
+    "acuracia": 0.833,
+    "importancia": {
+      "Atraso vs. prazo (dias)": 0.378,
+      "Dias até a entrega": 0.289,
+      "Quantidade de itens": 0.113,
+      "Valor do frete (R$)": 0.052,
+      "Prazo prometido (dias)": 0.044,
+      "Nº de vendedores": 0.033,
+      "Peso total (g)": 0.029,
+      "Frete / valor dos itens": 0.027,
+      "Valor dos itens (R$)": 0.026,
+      "Nº de parcelas": 0.008
+    }
+  },
+  "clusterizacao": {
+    "algoritmo": "K-Means sobre log(Recência, Frequência, Valor) + nota média, padronizados",
+    "silhueta_por_k": {
+      "3": 0.301,
+      "4": 0.368,
+      "5": 0.335,
+      "6": 0.303,
+      "7": 0.291
+    },
+    "k_escolhido": 4,
+    "segmentos": [
+      {
+        "segmento": "Satisfeitos antigos",
+        "clientes": 55314,
+        "pct_clientes": 59.7,
+        "pct_receita": 56.2,
+        "recencia_mediana_dias": 274,
+        "frequencia_media": 1.0,
+        "valor_mediano": 102.64,
+        "nota_media": 4.74
+      },
+      {
+        "segmento": "Insatisfeitos (risco)",
+        "clientes": 17790,
+        "pct_clientes": 19.2,
+        "pct_receita": 20.5,
+        "recencia_mediana_dias": 229,
+        "frequencia_media": 1.0,
+        "valor_mediano": 113.28,
+        "nota_media": 1.87
+      },
+      {
+        "segmento": "Satisfeitos recentes",
+        "clientes": 16838,
+        "pct_clientes": 18.2,
+        "pct_receita": 17.8,
+        "recencia_mediana_dias": 42,
+        "frequencia_media": 1.0,
+        "valor_mediano": 107.41,
+        "nota_media": 4.62
+      },
+      {
+        "segmento": "Fiéis (recompram)",
+        "clientes": 2764,
+        "pct_clientes": 3.0,
+        "pct_receita": 5.6,
+        "recencia_mediana_dias": 199,
+        "frequencia_media": 2.11,
+        "valor_mediano": 225.0,
+        "nota_media": 4.21
+      }
+    ]
+  },
+  "texto": {
+    "comentarios_analisados": 38872,
+    "top_insatisfeitos": [
+      "produto",
+      "recebi",
+      "comprei",
+      "veio",
+      "ainda",
+      "entregue",
+      "entrega",
+      "chegou",
+      "estou",
+      "prazo",
+      "compra",
+      "pedido"
+    ],
+    "top_satisfeitos": [
+      "produto",
+      "prazo",
+      "antes",
+      "entrega",
+      "chegou",
+      "bom",
+      "recomendo",
+      "bem",
+      "otimo",
+      "entregue",
+      "qualidade",
+      "tudo"
+    ],
+    "neg_citam_entrega_pct": 64.4,
+    "pos_citam_entrega_pct": 48.8
+  }
+}

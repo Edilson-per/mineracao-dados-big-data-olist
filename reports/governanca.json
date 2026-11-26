@@ -1,0 +1,27 @@
+{
+  "nulos_antes": {
+    "pedidos_sem_data_entrega": 2965,
+    "produtos_sem_categoria": 610,
+    "reviews_sem_comentario": 58247,
+    "reviews_total": 99224
+  },
+  "reviews_duplicadas_removidas": 551,
+  "entregas_antes_da_compra": 0,
+  "status_pedidos": {
+    "delivered": 96478,
+    "shipped": 1107,
+    "canceled": 625,
+    "unavailable": 609,
+    "invoiced": 314,
+    "processing": 301,
+    "created": 5,
+    "approved": 2
+  },
+  "pedidos_descartados": 2971,
+  "outliers_entrega_removidos": 41,
+  "pagamentos_faltantes_imputados": 1,
+  "peso_faltante_imputado": 0,
+  "linhas_finais_pedidos": 95783,
+  "clientes_unicos": 92706,
+  "clientes_que_compraram_mais_de_uma_vez_pct": 2.98
+}
